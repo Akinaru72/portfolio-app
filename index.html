@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><Portfolio-app></Portfolio-app></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Page Header -->
+    <header class="header-page">
+      <div class="container">
+        <div class="box-logo">
+          <picture>
+            <source
+              srcset="
+                ./images/header/header-1x.png 1x,
+                ./images/header/header-2x.png 2x
+              "
+            />
+            <img src="./images/header/header-1x.png" alt="Jefferson" />
+          </picture>
+          <a href="https://akinaru72.github.io/portfolio-app/">
+            <svg class="header-logo">
+              <use href="./images/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+        </div>
+        <nav class="header-navigation">
+          <button class="header-menu-button" type="button">
+            <ul class="header-nav">
+              <li class="header-nav-link"><a href="#about-me">About me</a></li>
+              <li class="header-nav-link"><a href="#benefits">Benefits</a></li>
+              <li class="header-nav-link"><a href="#projects">Projects</a></li>
+              <li class="header-nav-link"><a href="#faq">FAQ</a></li>
+            </ul>
+            Menu
+          </button>
+        </nav>
+        <a class="header-wtg" href="#work-together">Order the project</a>
+        <button class="header-open-button" type="button">
+          <svg class="open-modal-icon">
+            <use href="./images/sprite.svg#open-modal"></use>
+          </svg>
+        </button>
+        <div class="modal-window">
+          <button class="header-close-button" type="button">
+            <svg class="close-modal-icon">
+              <use href="./images/sprite.svg#close-modal"></use>
+            </svg>
+          </button>
+          <ul class="modal-menu">
+            <li class="modal-menu-link"><a href="#about-me">About me</a></li>
+            <li class="modal-menu-link"><a href="#benefits">Benefits</a></li>
+            <li class="modal-menu-link"><a href="#projects">Projects</a></li>
+            <li class="modal-menu-link"><a href="#faq">FAQ</a></li>
+          </ul>
+          <a class="modal-menu-wtg" href="#work-together">Order the project</a>
+        </div>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
