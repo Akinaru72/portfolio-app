@@ -14,19 +14,29 @@ menuBtn.addEventListener("click", () => {
 });
 
 closeLinkNav.addEventListener("click", () => {
-  nav.classList.renove("is-open");
+  nav.classList.remove("is-open");
 });
 
 openBtn.addEventListener("click", () => {
   modWindow.classList.add("is-open");
+  document.body.classList.add("no-scroll");
 });
 
 closeBtn.addEventListener("click", () => {
   modWindow.classList.remove("is-open");
+  document.body.classList.remove("no-scroll");
 });
 
 closeLinkWin.forEach((link) => {
   link.addEventListener("click", () => {
     modWindow.classList.remove("is-open");
+    document.body.classList.remove("no-scroll");
   });
+});
+
+const swiper = new Swiper(".swiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
