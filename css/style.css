@@ -757,3 +757,74 @@ body {
 }
 
 /* ----------------end projects------------------- */
+/* -------------------cover====------------------- */
+.page-cover .container {
+  padding: 0;
+  overflow: hidden;
+  height: 508px;
+  background-image: linear-gradient(
+      270deg,
+      #1c1d20 49.68%,
+      #69292d 67.73%,
+      #ed3b44 100%
+    ),
+    url(../images/cover/cover-lg.png);
+  background-repeat: no-repeat;
+}
+
+.content {
+  position: relative;
+}
+
+.marquee {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.marquee__inner {
+  display: flex;
+  transform: rotate(16deg);
+}
+
+.marquee__line {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.cover-image {
+  width: 282px;
+  height: 163px;
+  padding: 10px;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-20%);
+  }
+
+  to {
+    transform: translateX(-180%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-cover .container {
+    height: 960px;
+  }
+
+  .cover-image {
+    width: 544px;
+    height: 314px;
+    padding: 20px;
+  }
+}
+/* ------------------end covers------------------- */
